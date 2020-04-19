@@ -1,22 +1,41 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TryCal
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-           
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("please enter 2 ints");
+            string x = Console.ReadLine();
+            int xx = Convert.ToInt32(x);
+            string y = Console.ReadLine();
+            int yy = Convert.ToInt32(y);
+
+
+            Add(xx, yy);
+            Sub(xx, yy);
+            Mul(xx, yy);
+
             Console.ReadKey();
 
 
-            //This is my first committ.
-           
+
+        }
+
+        private static void Mul(int xx, int yy)
+        {
+            Console.WriteLine(xx * yy);
+        }
+
+        private static void Sub(int xx, int yy)
+        {
+            Console.WriteLine(xx - yy);
+        }
+
+        private static void Add(int xx, int yy)
+        {
+            Console.WriteLine(xx + yy);
         }
     }
 }
