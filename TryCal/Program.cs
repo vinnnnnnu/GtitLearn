@@ -16,8 +16,9 @@ namespace TryCal
             Add(xx, yy);
             Sub(xx, yy);
             Mul(xx, yy);
+            MyErrorLife();
             
-            Console.WriteLine("All Done");
+            
 
             Console.ReadKey();
 
@@ -38,6 +39,11 @@ namespace TryCal
         private static void Add(int xx, int yy)
         {
             Console.WriteLine(xx + yy);
+        }
+        
+        private static void MyErrorLife()
+        {
+            Console.WriteLine("Fucked up");
         }
     }
 }
