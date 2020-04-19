@@ -16,6 +16,8 @@ namespace TryCal
             Add(xx, yy);
             Sub(xx, yy);
             Mul(xx, yy);
+            
+            Console.WriteLine("All Done");
 
             Console.ReadKey();
 
